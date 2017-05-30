@@ -1,0 +1,106 @@
+html, body {height: 100%}
+html {font-size: 16px}
+body {
+	margin: 0;
+	font-size: calc(1em + 1vmin);
+	font-family: Helvetica, FontAwesome,   sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #000000;
+	color: #ffffff;
+}
+
+@font-face {
+	font-family: title;
+	src: local("Tetricide"), url("tetri.ttf") format("truetype");
+}
+
+.color {
+	font-family: title;
+	color: #00e600;
+	font-size: 9vw;
+	line-height: 9vw;
+	text-shadow: 0 0 3vw #b3ffb3;
+	text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50px; left: 0; bottom: 0; right: 0;
+}
+
+.match {
+	font-family: title;
+	color: #ffff00;
+	font-size: 9vw;
+	line-height: 9vw;
+	text-shadow: 0 0 3vw #ffcc00;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 240px; left: 0; bottom: 0; right: 0;
+}
+
+#instruction {
+	color: #00e600;
+	text-shadow:2px 2px 3px #006600;
+	font-size:30px;
+	padding:0 15px;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 450px; left: 0; bottom: 0; right: 0;
+
+}
+
+#rules {
+	color: #ffff00;
+	text-shadow:2px 2px 3px #e6b800;
+	font-size:20px;
+	padding:0 15px;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 500px; left: 0; bottom: 0; right: 0;
+
+}
+
+#easy {
+	color: #00e600;
+	text-shadow:2px 2px 3px #006600;
+	font-size:30px;
+	padding:0 15px;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 550px; left: 0; bottom: 0; right: 0;
+
+}
+
+#medium {
+	color: #ffff00;
+	text-shadow:2px 2px 3px #e6b800;
+	font-size:30px;
+	padding:0 15px;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 600px; left: 0; bottom: 0; right: 0;
+
+}
+
+#hard {
+	color: #00e600;
+	text-shadow:2px 2px 3px #006600;
+	font-size:30px;
+	padding:0 15px;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 650px; left: 0; bottom: 0; right: 0;
+
+}

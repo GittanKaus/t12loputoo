@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="gameEasy.css">
+<script type="text/javascript" src="game.js" defer></script>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+<main>
+<button class="btn" onclick="location.href='homepage.html'">Back</button>
+
+<div data-role="content" class = "backgroundColors" id = "backgroundColors">
+    <div data-role="fieldcontain" data-controltype="slider" class="redSlider">      
+        <label for="red" color="red">
+            Red
+        </label>
+        <input id="red" type="range" name="redSlider" value="255" min="0" max="255"
+        data-highlight="true" data-mini="true" onchange = "changeBackground()" />
+    </div>
+    <div data-role="fieldcontain" data-controltype="slider" class="greenSlider">
+        <label for="green">
+            Green
+        </label>
+        <input id="green" type="range" name="greenSlider" value="255" min="0"
+        max="255" data-highlight="true" data-mini="true" onchange = "changeBackground()" />
+    </div>
+    <div data-role="fieldcontain" data-controltype="slider" class="blueSlider">
+        <label for="blue">
+            Blue
+        </label>
+        <input id="blue" type="range" name="blueSlider" value="255" min="0" max="255"
+        data-highlight="true" data-mini="true" onchange = "changeBackground()" />
+    </div>
+ </div>
+ 
+  <div class="controls">
+    <div class="new-game">New Game</div>
+    <div>Moves <span class="moves">0</span> / <span class="total">35</span></div>
+  </div>
+  <div id="board"></div>
+  <div id="colors"></div>
+  <div id="game-over"></div>
+</main>
+</body>
+</html>

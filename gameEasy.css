@@ -1,0 +1,132 @@
+/* colors */
+.a, .a-x {background: #33cc33;}
+.b, .b-x {background: #0066ff;}
+.c, .c-x {background: #ff00ff;}
+.d, .d-x {background: #9900ff;}
+.e, .e-x {background: #ff0066;}
+.f, .f-x {background: #ff3300;}
+.g, .g-x {background: #ff9900;}
+.h, .h-x {background: #00ff00;}
+.i, .i-x {background: #009900;}
+.j, .j-x {background: #ffff00;}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	user-select: none;
+	padding: 1em 0;
+}
+
+#backgroundColors{
+	 position: absolute;
+	top: 50px; left: 50px; bottom: 50px; right: 50px;
+}
+
+#board {
+	display: flex;
+	flex-flow: row wrap;
+	height: 70vmin;
+	width: 70vmin;
+	border: 1ch solid;
+	border-radius: .3em;
+}
+
+#board > * {
+	flex: 0 1 7vmin;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 7vmin;
+	transition: background 300ms linear;
+}
+
+#board:not(.started) > *:first-of-type::after {
+	content: '?';
+}
+
+#colors {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1ch;
+}
+
+#colors > * {
+	flex: 0 1 7vmin;
+	height: 7vmin;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: .3em;
+}
+
+.new-game {
+	pointer-events: auto;
+	cursor: pointer;
+	color: #ffff00;
+	text-shadow:2px 2px 3px #e6b800;
+	font-size:10px;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	margin-bottom:0px;
+}
+
+#game-over {
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3em;
+	color: #00e600;
+	text-shadow:2px 2px 3px #006600;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.btn {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	color: #00e600;
+	text-shadow:2px 2px 3px #006600;
+	font-size:10px;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	margin-bottom:0px;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.redSlider {
+	font-family: 'Press Start 2P', cursive;
+	text-shadow:2px 2px 3px #e6b800;
+	font-size:10px;
+}
+
+.greenSlider {
+	font-family: 'Press Start 2P', cursive;
+	text-shadow:2px 2px 3px #e6b800;
+	font-size:10px;
+}
+
+.blueSlider {
+	font-family: 'Press Start 2P', cursive;
+	text-shadow:2px 2px 3px #e6b800;
+	font-size:10px;
+}
+
+html, body {height: 100%}
+html {font-size: 16px}
+body {
+	margin: 0;
+	font-size: calc(1em + 1vmin);
+	font-family: 'Press Start 2P', cursive;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #000000;
+	text-shadow:2px 2px 3px #e6b800;
+	color: #ffff00;
+}
